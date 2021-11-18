@@ -6,7 +6,9 @@
 #include <assert.h>		/* assert */
 #include <stdio.h>		/* printf */
 
-/* Fibonacci function definition */
+/* Fibonacci function definition          */
+/* Pre: n >= 1, p = 1, pp = 0             */
+/* Post: nth number of Fibonacci sequence */
 int fib (int n, int p, int pp)
 {
     assert(n >= 1);

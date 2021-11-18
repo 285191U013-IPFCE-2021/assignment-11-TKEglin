@@ -15,7 +15,9 @@ int sum (int n)
     return 1;
 }
 
-/* Sum integers 1 to n */
+/* Sum integers 1 to n    */
+/* Pre: n >= 1, total = 0 */
+/* Post: Sum from 1 to n  */
 int sumtail (int n, int total)
 {
     assert(n >= 1);
@@ -26,7 +28,9 @@ int sumtail (int n, int total)
         return sumtail(n - 1, total + n);
 }
 
-/* Sum integers 1 to n */
+/* Sum integers 1 to n   */
+/* Pre: n >= 1           */
+/* Post: Sum from 1 to n */
 int sumwhile (int n)
 {
     int sum = 0,
